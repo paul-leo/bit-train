@@ -1,0 +1,4 @@
+node_modules
+.bit
+.cache
+build
