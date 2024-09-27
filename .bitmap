@@ -9,6 +9,20 @@
  */
 
 {
+    "envs/react-component-env": {
+        "name": "envs/react-component-env",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/envs/react-component-env",
+        "config": {
+            "bitdev.general/envs/bit-env@1.0.15": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.general/envs/bit-env"
+            }
+        }
+    },
     "train-list": {
         "name": "train-list",
         "scope": "",

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { useState } from 'react';
+import '@learnbit/styling.config.tailwind/globals.tailwind.css';
 export type TrainListProps = {
   /**
    * sets the component children.
