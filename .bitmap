@@ -9,6 +9,33 @@
  */
 
 {
+    "config/tailwind": {
+        "name": "config/tailwind",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/config/tailwind",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            },
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.component/dev-files": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "learnbit.styling",
+                    "name": "config/tailwind",
+                    "version": "0.0.2"
+                }
+            }
+        }
+    },
     "envs/react-component-env": {
         "name": "envs/react-component-env",
         "scope": "",

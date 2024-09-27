@@ -58,7 +58,9 @@
         "@learnbit/styling.config.tailwind": "^0.0.2",
         "@learnbit/styling.transformers.tailwind": "^0.0.6",
         "@teambit/react.mounter": "^1.0.24",
-        "@vitejs/plugin-react": "^4.3.1"
+        "@vitejs/plugin-react": "^4.3.1",
+        "glob": "^10.2.6",
+        "react": "^18.2.0"
       },
       "peerDependencies": {}
     },

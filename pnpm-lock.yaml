@@ -11,6 +11,9 @@ importers:
       '@apollo/client':
         specifier: ^3.8.8
         version: 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@bitdev/react.react-env':
+        specifier: 2.1.6
+        version: 2.1.6(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
       '@learnbit/styling.config.tailwind':
         specifier: ^0.0.2
         version: 0.0.2
@@ -45,7 +48,7 @@ importers:
         specifier: ^1.1.4
         version: 1.1.4
       '@types/jest':
-        specifier: ^29.2.2
+        specifier: '>=29.2.2 <30.0.0'
         version: 29.5.13
       '@types/node':
         specifier: 20.12.10
@@ -92,6 +95,9 @@ importers:
       eslint-plugin-react-hooks:
         specifier: 4.6.2
         version: 4.6.2(eslint@8.56.0)
+      glob:
+        specifier: ^10.2.6
+        version: 10.4.5
       graphql:
         specifier: ^16.8.1
         version: 16.9.0
@@ -102,7 +108,7 @@ importers:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: '>=18.3.0 <19.0.0'
+        specifier: ^18.2.0
         version: 18.3.1
       react-dom:
         specifier: ^18.3.0
@@ -123,12 +129,12 @@ importers:
         specifier: ^5.88.2
         version: 5.95.0(esbuild@0.14.29)
     devDependencies:
+      '@babel/runtime':
+        specifier: 7.20.0
+        version: 7.20.0
       '@bitdev/general.envs.bit-env':
         specifier: 1.0.15
         version: 1.0.15(@babel/core@7.25.2)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jest@29.3.1(@types/node@20.12.10))(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))
-      '@bitdev/react.react-env':
-        specifier: 2.1.6
-        version: 2.1.6(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
 
   node_modules/.bit_roots/bitdev.general_envs_bit-env@1.0.15:
     dependencies:
@@ -138,6 +144,9 @@ importers:
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.3.1)
+      '@nore-work/train.config.tailwind':
+        specifier: workspace:*
+        version: file:train/config/tailwind
       '@nore-work/train.envs.react-component-env':
         specifier: workspace:*
         version: file:train/envs/react-component-env(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)
@@ -187,6 +196,8 @@ importers:
         specifier: ^18.0.0
         version: 18.3.1(react@18.3.1)
     dependenciesMeta:
+      '@nore-work/train.config.tailwind':
+        injected: true
       '@nore-work/train.envs.react-component-env':
         injected: true
       '@nore-work/train.train-list':
@@ -210,6 +221,9 @@ importers:
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.3.1)
+      '@nore-work/train.config.tailwind':
+        specifier: workspace:*
+        version: file:train/config/tailwind
       '@nore-work/train.envs.react-component-env':
         specifier: workspace:*
         version: file:train/envs/react-component-env(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)
@@ -316,6 +330,8 @@ importers:
         specifier: ^5.88.2
         version: 5.95.0(esbuild@0.14.29)
     dependenciesMeta:
+      '@nore-work/train.config.tailwind':
+        injected: true
       '@nore-work/train.envs.react-component-env':
         injected: true
       '@nore-work/train.train-list':
@@ -325,6 +341,54 @@ importers:
       '@nore-work/train.train-search':
         injected: true
 
+  node_modules/.bit_roots/teambit.harmony_node:
+    dependencies:
+      '@nore-work/train.config.tailwind':
+        specifier: workspace:*
+        version: file:train/config/tailwind
+      '@nore-work/train.envs.react-component-env':
+        specifier: workspace:*
+        version: file:train/envs/react-component-env(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)
+      '@nore-work/train.train-list':
+        specifier: workspace:*
+        version: file:train/train-list(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(react@18.3.1)(terser@5.34.0)(typescript@5.6.2)
+      '@nore-work/train.train-order':
+        specifier: workspace:*
+        version: file:train/train-order(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(react@18.3.1)(terser@5.34.0)(typescript@5.6.2)
+      '@nore-work/train.train-search':
+        specifier: workspace:*
+        version: file:train/train-search(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(react@18.3.1)(terser@5.34.0)(typescript@5.6.2)
+    dependenciesMeta:
+      '@nore-work/train.config.tailwind':
+        injected: true
+      '@nore-work/train.envs.react-component-env':
+        injected: true
+      '@nore-work/train.train-list':
+        injected: true
+      '@nore-work/train.train-order':
+        injected: true
+      '@nore-work/train.train-search':
+        injected: true
+
+  train/config/tailwind:
+    dependencies:
+      glob:
+        specifier: ^10.2.6
+        version: 10.4.5
+    devDependencies:
+      '@babel/runtime':
+        specifier: 7.20.0
+        version: 7.20.0
+      '@types/jest':
+        specifier: 26.0.20
+        version: 26.0.20
+      '@types/node':
+        specifier: 12.20.4
+        version: 12.20.4
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+
   train/envs/react-component-env:
     dependencies:
       '@apollo/client':
@@ -332,7 +396,7 @@ importers:
         version: 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@bitdev/react.react-env':
         specifier: 2.1.6
-        version: 2.1.6(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
+        version: 2.1.6(@babel/core@7.12.9)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -441,7 +505,7 @@ importers:
     devDependencies:
       '@bitdev/general.envs.bit-env':
         specifier: 1.0.15
-        version: 1.0.15(@babel/core@7.25.2)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jest@29.3.1(@types/node@20.12.10))(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))
+        version: 1.0.15(@babel/core@7.12.9)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jest@29.3.1(@types/node@20.12.10))(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))
 
   train/train-list:
     dependencies:
@@ -451,9 +515,6 @@ importers:
       '@learnbit/styling.config.tailwind':
         specifier: ^0.0.2
         version: 0.0.2
-      '@learnbit/styling.transformers.tailwind':
-        specifier: ^0.0.6
-        version: 0.0.6
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -556,7 +617,7 @@ importers:
     devDependencies:
       '@bitdev/react.react-env':
         specifier: 2.1.6
-        version: 2.1.6(@babel/core@7.12.9)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
+        version: 2.1.6(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)
 
   train/train-order:
     dependencies:
@@ -1926,6 +1987,10 @@ packages:
     resolution: {integrity: sha512-ok/BTPFzFKVMwO5eOHRrvnBVHdRy9IrsrW1GpMaQ9MCnilNLXQKmAX8s1YXDFaai9xJpac2ySzV0YeRRECr2Vw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
+  '@jest/types@26.6.2':
+    resolution: {integrity: sha512-fC6QCp7Sc5sX6g8Tvbmj4XUTbyrik0akgRy03yjXbQaBWWNWGE7SGtJk98m0N8nzegD/7SggrUlivxo5ax4KWQ==}
+    engines: {node: '>= 10.14.2'}
+
   '@jest/types@29.6.3':
     resolution: {integrity: sha512-u3UPsIilWKOM3F9CXtrG8LEJmNxwoCQC/XVj4IKYXvvpx7QIi/Kg1LI5uDmDpKlac62NUtX7eLjRh+jVZcLOzw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1988,6 +2053,9 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@nore-work/train.config.tailwind@file:train/config/tailwind':
+    resolution: {directory: train/config/tailwind, type: directory}
 
   '@nore-work/train.envs.react-component-env@file:train/envs/react-component-env':
     resolution: {directory: train/envs/react-component-env, type: directory}
@@ -3435,6 +3503,9 @@ packages:
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
 
+  '@types/jest@26.0.20':
+    resolution: {integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==}
+
   '@types/jest@29.5.13':
     resolution: {integrity: sha512-wd+MVEZCHt23V0/L642O5APvspWply/rGY5BcW4SUETo2UzPU3Z26qr8jC2qxpimI2jjx9h7+2cj2FwIr01bXg==}
 
@@ -3461,6 +3532,9 @@ packages:
 
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
+
+  '@types/node@12.20.4':
+    resolution: {integrity: sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==}
 
   '@types/node@20.12.10':
     resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
@@ -3527,6 +3601,9 @@ packages:
 
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
+
+  '@types/yargs@15.0.19':
+    resolution: {integrity: sha512-2XUaGVmyQjgyAZldf0D0c14vvo/yv0MhQBSTJcejMMaitsn3nxCB6TmH4G0ZQf+uxROOa9mpanoSm8h6SG/1ZA==}
 
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
@@ -4956,6 +5033,10 @@ packages:
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
+
+  diff-sequences@26.6.2:
+    resolution: {integrity: sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q==}
+    engines: {node: '>= 10.14.2'}
 
   diff-sequences@29.6.3:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
@@ -6461,6 +6542,10 @@ packages:
       ts-node:
         optional: true
 
+  jest-diff@26.6.2:
+    resolution: {integrity: sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==}
+    engines: {node: '>= 10.14.2'}
+
   jest-diff@29.7.0:
     resolution: {integrity: sha512-LMIgiIrhigmPrs03JHpxUh2yISK3vLFPkAodPeo0+BuF7wA2FoQbkEg1u8gBYBThncu7e1oEDUfIXVuTqLRUjw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -6485,6 +6570,10 @@ packages:
   jest-environment-node@29.7.0:
     resolution: {integrity: sha512-DOSwCRqXirTOyheM+4d5YZOrWcdu0LNZ87ewUoywbcb2XR4wKgqiG8vNeYwhjFMbEkfju7wx2GYH0P2gevGvFw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+
+  jest-get-type@26.3.0:
+    resolution: {integrity: sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==}
+    engines: {node: '>= 10.14.2'}
 
   jest-get-type@29.6.3:
     resolution: {integrity: sha512-zrteXnqYxfQh7l5FHyL38jL39di8H8rHoecLH3JNxH3BwOrBsNeabdap5e0I23lD4HHI8W5VFBZqG4Eaq5LNcw==}
@@ -7998,6 +8087,10 @@ packages:
 
   pretty-error@4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==}
+
+  pretty-format@26.6.2:
+    resolution: {integrity: sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==}
+    engines: {node: '>= 10'}
 
   pretty-format@27.5.1:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
@@ -11641,6 +11734,86 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
+  '@bitdev/general.envs.bit-aspect-env@1.0.14(@babel/core@7.12.9)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))':
+    dependencies:
+      '@babel/runtime': 7.20.0
+      '@bitdev/react.eslint.eslint-config-bit-react': 1.1.3(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0))(eslint-plugin-mdx@1.17.1(eslint@8.56.0))(eslint@8.56.0)(typescript@5.6.2)
+      '@mdx-js/react': 1.6.22(react@18.3.1)
+      '@teambit/defender.eslint-linter': 1.0.39(eslint@8.56.0)(react-dom@18.3.1(react@18.3.1))
+      '@teambit/defender.prettier-formatter': 1.0.19(react-dom@18.3.1(react@18.3.1))
+      '@teambit/dependencies.modules.packages-excluder': 1.0.8(react@18.3.1)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.3.0)(react@18.3.1)
+      '@teambit/preview.react-preview': 1.0.52(@babel/core@7.12.9)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@16.9.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)
+      '@teambit/react.react-env': 1.0.100(@babel/core@7.12.9)(@babel/traverse@7.25.6)(less@4.2.0)(lightningcss@1.27.0)(type-fest@3.13.1)(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@teambit/toolbox.performance.v8-cache': 0.0.33
+      '@teambit/typescript.typescript-compiler': 2.0.44
+      '@teambit/vite.vitest-tester': 0.1.8(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(vitest@1.6.0(@types/node@20.12.10)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.6.2)
+      core-js: 3.38.1
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 1.17.1(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.56.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      typescript: 5.6.2
+      vitest: 1.6.0(@types/node@20.12.10)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@edge-runtime/vm'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/node'
+      - '@types/react'
+      - '@types/react-dom'
+      - '@types/webpack'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - babel-plugin-macros
+      - bluebird
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - graphql
+      - happy-dom
+      - jsdom
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - react-test-renderer
+      - sass
+      - sass-embedded
+      - sockjs-client
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - ts-node
+      - type-fest
+      - uglify-js
+      - utf-8-validate
+      - vite
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
   '@bitdev/general.envs.bit-aspect-env@1.0.14(@babel/core@7.25.2)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))':
     dependencies:
       '@babel/runtime': 7.20.0
@@ -11712,6 +11885,80 @@ snapshots:
       - terser
       - ts-node
       - type-fest
+      - uglify-js
+      - utf-8-validate
+      - vite
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
+  '@bitdev/general.envs.bit-env@1.0.15(@babel/core@7.12.9)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jest@29.3.1(@types/node@20.12.10))(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))':
+    dependencies:
+      '@babel/runtime': 7.20.0
+      '@bitdev/general.envs.bit-aspect-env': 1.0.14(@babel/core@7.12.9)(@babel/traverse@7.25.6)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/node@20.12.10)(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0)(type-fest@3.13.1)(vite@5.4.8(@types/node@20.12.10)(less@4.2.0)(lightningcss@1.27.0)(sass@1.79.3)(terser@5.34.0))(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@mdx-js/react': 1.6.22(react@18.3.1)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.3.0)(react@18.3.1)
+      '@teambit/toolbox.performance.v8-cache': 0.0.33
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.6.2)
+      core-js: 3.38.1
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(jest@29.3.1(@types/node@20.12.10))(typescript@5.6.2)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 1.17.1(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.56.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@edge-runtime/vm'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/node'
+      - '@types/react'
+      - '@types/react-dom'
+      - '@types/webpack'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - babel-plugin-macros
+      - bluebird
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - graphql
+      - happy-dom
+      - jest
+      - jsdom
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - react-test-renderer
+      - sass
+      - sass-embedded
+      - sockjs-client
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - ts-node
+      - type-fest
+      - typescript
       - uglify-js
       - utf-8-validate
       - vite
@@ -12395,6 +12642,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@jest/types@26.6.2':
+    dependencies:
+      '@types/istanbul-lib-coverage': 2.0.6
+      '@types/istanbul-reports': 3.0.4
+      '@types/node': 20.12.10
+      '@types/yargs': 15.0.19
+      chalk: 4.1.2
+
   '@jest/types@29.6.3':
     dependencies:
       '@jest/schemas': 29.6.3
@@ -12507,6 +12762,10 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
+  '@nore-work/train.config.tailwind@file:train/config/tailwind':
+    dependencies:
+      glob: 10.4.5
+
   '@nore-work/train.envs.react-component-env@file:train/envs/react-component-env(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.0)(type-fest@3.13.1)(typescript@5.6.2)':
     dependencies:
       '@apollo/client': 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -12594,7 +12853,6 @@ snapshots:
     dependencies:
       '@apollo/client': 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@learnbit/styling.config.tailwind': 0.0.2
-      '@learnbit/styling.transformers.tailwind': 0.0.6
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.3.1)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.3.0)(react@18.3.1)
@@ -12650,7 +12908,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-      - ts-node
       - typescript
       - uglify-js
       - utf-8-validate
@@ -14144,6 +14401,52 @@ snapshots:
     dependencies:
       find-root: 1.1.0
 
+  '@teambit/preview.react-preview@1.0.52(@babel/core@7.12.9)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@16.9.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)':
+    dependencies:
+      '@teambit/docs.docs-template': 1.0.7(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
+      '@teambit/react.mounter': 1.0.17(@types/react-dom@18.3.0)(@types/react@18.3.0)
+      '@teambit/react.webpack.react-webpack': 1.0.36(@babel/core@7.12.9)(eslint@8.56.0)(less@4.2.0)(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@teambit/webpack.webpack-bundler': 1.0.11(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.27.0)
+      '@teambit/webpack.webpack-dev-server': 1.0.15(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@8.56.0)(lightningcss@1.27.0)(typescript@5.6.2)(webpack@5.95.0)
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
+      object-hash: 3.0.0
+      react: 18.3.1
+      webpack: 5.95.0(esbuild@0.14.29)
+      webpack-dev-server: 4.15.0(webpack@5.95.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/webpack'
+      - bufferutil
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint
+      - fibers
+      - graphql
+      - less
+      - lightningcss
+      - node-sass
+      - react-dom
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
   '@teambit/preview.react-preview@1.0.52(@babel/core@7.25.2)(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@16.9.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)':
     dependencies:
       '@teambit/docs.docs-template': 1.0.7(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
@@ -14282,6 +14585,52 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
+  '@teambit/preview.react-preview@1.0.56(@babel/core@7.12.9)(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@15.8.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)':
+    dependencies:
+      '@teambit/docs.docs-template': 1.0.7(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@15.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
+      '@teambit/react.mounter': 1.0.20(@types/react-dom@18.3.0)(@types/react@18.3.0)
+      '@teambit/react.webpack.react-webpack': 1.0.37(@babel/core@7.12.9)(eslint@8.56.0)(less@4.2.0)(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@teambit/webpack.webpack-bundler': 1.0.12(lightningcss@1.27.0)(react@18.3.1)
+      '@teambit/webpack.webpack-dev-server': 1.0.16(eslint@8.56.0)(lightningcss@1.27.0)(react@18.3.1)(typescript@5.6.2)(webpack@5.95.0)
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
+      object-hash: 3.0.0
+      react: 18.3.1
+      webpack: 5.95.0(esbuild@0.14.29)
+      webpack-dev-server: 4.15.0(webpack@5.95.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/webpack'
+      - bufferutil
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint
+      - fibers
+      - graphql
+      - less
+      - lightningcss
+      - node-sass
+      - react-dom
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
   '@teambit/preview.react-preview@1.0.56(@babel/core@7.25.2)(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@15.8.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)':
     dependencies:
       '@teambit/docs.docs-template': 1.0.7(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@15.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
@@ -14325,6 +14674,56 @@ snapshots:
       - utf-8-validate
       - vue-template-compiler
       - webpack-cli
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
+  '@teambit/react.apps.react-app-types@2.0.4(@babel/core@7.12.9)(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.0)(eslint@8.56.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))':
+    dependencies:
+      '@teambit/bit-error': 0.0.404
+      '@teambit/react.rendering.ssr': 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/react.webpack.react-webpack': 1.0.37(@babel/core@7.12.9)(eslint@8.56.0)(less@4.2.0)(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@teambit/toolbox.network.get-port': 1.0.6
+      '@teambit/ui-foundation.ui.pages.static-error': 0.0.104(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/webpack.transformers.favicon-reload': 1.0.0
+      '@teambit/webpack.webpack-bundler': 1.0.12(lightningcss@1.27.0)(react@18.3.1)
+      '@teambit/webpack.webpack-dev-server': 1.0.16(eslint@8.56.0)(lightningcss@1.27.0)(react@18.3.1)(typescript@5.6.2)(webpack@5.95.0)
+      express: 4.18.2
+      fs-extra: 10.1.0
+      lodash: 4.17.21
+      terser-webpack-plugin: 5.2.0(esbuild@0.14.29)(webpack@5.95.0)
+      url-join: 4.0.0
+      webpack: 5.95.0(esbuild@0.14.29)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/react'
+      - '@types/webpack'
+      - bufferutil
+      - clean-css
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - fibers
+      - less
+      - lightningcss
+      - node-sass
+      - react
+      - react-dom
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
 
@@ -14450,6 +14849,22 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@teambit/react.jest.react-jest@1.0.33(@babel/core@7.12.9)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))':
+    dependencies:
+      '@babel/preset-react': 7.24.7(@babel/core@7.12.9)
+      '@teambit/defender.jest-tester': 2.0.15(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))
+      '@testing-library/jest-dom': 5.16.5
+      jest-environment-jsdom: 29.3.1
+      react-app-polyfill: 3.0.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - bufferutil
+      - canvas
+      - jest
+      - supports-color
+      - utf-8-validate
+
   '@teambit/react.jest.react-jest@1.0.33(@babel/core@7.25.2)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))':
     dependencies:
       '@babel/preset-react': 7.24.7(@babel/core@7.25.2)
@@ -14507,6 +14922,87 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-error-boundary: 3.1.4(react@18.3.1)
+
+  '@teambit/react.react-env@1.0.100(@babel/core@7.12.9)(@babel/traverse@7.25.6)(less@4.2.0)(lightningcss@1.27.0)(type-fest@3.13.1)(webpack-dev-server@4.15.0(webpack@5.95.0))':
+    dependencies:
+      '@babel/runtime': 7.20.0
+      '@mdx-js/react': 1.6.22(react@18.3.1)
+      '@teambit/defender.eslint-linter': 1.0.40(eslint@8.56.0)(react-dom@18.3.1(react@18.3.1))
+      '@teambit/defender.jest-tester': 2.0.15(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))
+      '@teambit/defender.prettier-formatter': 1.0.19(react-dom@18.3.1(react@18.3.1))
+      '@teambit/dependencies.modules.packages-excluder': 1.0.8(react@18.3.1)
+      '@teambit/docs.docs-template': 1.0.7(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(graphql@15.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@teambit/preview.react-preview': 1.0.56(@babel/core@7.12.9)(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@18.3.0)(@types/react@18.3.0)(eslint@8.56.0)(graphql@15.8.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)
+      '@teambit/react.apps.react-app-types': 2.0.4(@babel/core@7.12.9)(@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.0)(eslint@8.56.0)(less@4.2.0)(lightningcss@1.27.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))
+      '@teambit/react.eslint-config-bit-react': 1.0.220(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0))(eslint-plugin-jsx-a11y@6.8.0(eslint@8.56.0))(eslint-plugin-react-hooks@4.6.2(eslint@8.56.0))(eslint-plugin-react@7.33.2(eslint@8.56.0))(eslint@8.56.0)(typescript@5.6.2)
+      '@teambit/react.generator.react-starters': 1.0.8
+      '@teambit/react.generator.react-templates': 1.0.11
+      '@teambit/react.jest.react-jest': 1.0.33(@babel/core@7.12.9)(@babel/traverse@7.25.6)(jest@29.3.1(@types/node@20.12.10))
+      '@teambit/react.mounter': 1.0.20(@types/react-dom@18.3.0)(@types/react@18.3.0)
+      '@teambit/typescript.typescript-compiler': 2.0.44
+      '@testing-library/jest-dom': 6.5.0
+      '@testing-library/react': 13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@testing-library/react-hooks': 8.0.1(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/jest': 29.5.13
+      '@types/node': 20.12.10
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
+      '@types/testing-library__jest-dom': 5.14.9
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.6.2)
+      browserslist: 4.21.4
+      core-js: 3.38.1
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1(@typescript-eslint/parser@6.19.1(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(jest@29.3.1(@types/node@20.12.10))(typescript@5.6.2)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.56.0)
+      graphql: 15.8.0
+      jest: 29.3.1(@types/node@20.12.10)
+      pino-pretty: 4.5.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      typescript: 5.6.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/css'
+      - '@types/webpack'
+      - babel-plugin-macros
+      - bluebird
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - react-test-renderer
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
 
   '@teambit/react.react-env@1.0.100(@babel/core@7.25.2)(@babel/traverse@7.25.6)(less@4.2.0)(lightningcss@1.27.0)(type-fest@3.13.1)(webpack-dev-server@4.15.0(webpack@5.95.0))':
     dependencies:
@@ -14875,6 +15371,73 @@ snapshots:
       '@teambit/webpack.modules.style-regexps': 1.0.6
       '@teambit/webpack.webpack-dev-server': 1.0.15(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@8.56.0)(lightningcss@1.27.0)(typescript@5.6.2)(webpack@5.95.0)
       babel-loader: 9.1.0(@babel/core@7.25.2)(webpack@5.95.0)
+      browserslist: 4.21.4
+      css-loader: 6.7.2(webpack@5.95.0)
+      css-minimizer-webpack-plugin: 6.0.0(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.27.0)(webpack@5.95.0)
+      esbuild: 0.14.29
+      less-loader: 11.1.0(less@4.2.0)(webpack@5.95.0)
+      lightningcss: 1.27.0
+      lodash: 4.17.21
+      mini-css-extract-plugin: 2.9.1(webpack@5.95.0)
+      new-url-loader: 0.1.1(webpack@5.95.0)
+      postcss: 8.4.19
+      postcss-flexbugs-fixes: 5.0.2(postcss@8.4.19)
+      postcss-loader: 7.0.1(postcss@8.4.19)(webpack@5.95.0)
+      postcss-normalize: 10.0.1(browserslist@4.21.4)(postcss@8.4.19)
+      postcss-preset-env: 7.8.3(postcss@8.4.19)
+      react-dev-utils: 12.0.1(eslint@8.56.0)(typescript@5.6.2)(webpack@5.95.0)
+      react-dom: 18.2.0(react@18.3.1)
+      react-refresh: 0.14.0
+      resolve-url-loader: 5.0.0
+      sass: 1.63.6
+      sass-loader: 13.3.2(sass@1.63.6)(webpack@5.95.0)
+      source-map-loader: 4.0.1(webpack@5.95.0)
+      style-loader: 3.3.1(webpack@5.95.0)
+      terser-webpack-plugin: 5.2.0(esbuild@0.14.29)(webpack@5.95.0)
+      webpack: 5.95.0(esbuild@0.14.29)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@types/webpack'
+      - bufferutil
+      - clean-css
+      - csso
+      - debug
+      - eslint
+      - fibers
+      - less
+      - node-sass
+      - react
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
+  '@teambit/react.webpack.react-webpack@1.0.37(@babel/core@7.12.9)(eslint@8.56.0)(less@4.2.0)(react@18.3.1)(type-fest@3.13.1)(typescript@5.6.2)(webpack-dev-server@4.15.0(webpack@5.95.0))':
+    dependencies:
+      '@babel/preset-env': 7.22.15(@babel/core@7.12.9)
+      '@babel/preset-react': 7.22.15(@babel/core@7.12.9)
+      '@bitdev/react.webpack.refresh-overlay': 0.0.2
+      '@parcel/css': 1.14.0
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.0)(type-fest@3.13.1)(webpack-dev-server@4.15.0(webpack@5.95.0))(webpack@5.95.0)
+      '@svgr/webpack': 8.1.0(typescript@5.6.2)
+      '@swc/css': 0.0.20
+      '@teambit/component-id': 1.2.0
+      '@teambit/mdx.modules.mdx-loader': 1.0.14(@babel/core@7.12.9)(esbuild@0.14.29)
+      '@teambit/react.babel.bit-react-transformer': 1.0.23(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+      '@teambit/webpack.modules.generate-style-loaders': 1.0.11
+      '@teambit/webpack.modules.style-regexps': 1.0.6
+      '@teambit/webpack.webpack-dev-server': 1.0.16(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(eslint@8.56.0)(lightningcss@1.27.0)(react@18.3.1)(typescript@5.6.2)(webpack@5.95.0)
+      babel-loader: 9.1.0(@babel/core@7.12.9)(webpack@5.95.0)
       browserslist: 4.21.4
       css-loader: 6.7.2(webpack@5.95.0)
       css-minimizer-webpack-plugin: 6.0.0(@parcel/css@1.14.0)(@swc/css@0.0.20)(esbuild@0.14.29)(lightningcss@1.27.0)(webpack@5.95.0)
@@ -15377,7 +15940,7 @@ snapshots:
   '@testing-library/dom@8.20.1':
     dependencies:
       '@babel/code-frame': 7.24.7
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       '@types/aria-query': 5.0.4
       aria-query: 5.1.3
       chalk: 4.1.2
@@ -15388,7 +15951,7 @@ snapshots:
   '@testing-library/jest-dom@5.16.5':
     dependencies:
       '@adobe/css-tools': 4.4.0
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       '@types/testing-library__jest-dom': 5.14.9
       aria-query: 5.3.2
       chalk: 3.0.0
@@ -15420,7 +15983,7 @@ snapshots:
 
   '@testing-library/react-hooks@8.0.1(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       react: 18.3.1
       react-error-boundary: 3.1.4(react@18.3.1)
     optionalDependencies:
@@ -15429,7 +15992,7 @@ snapshots:
 
   '@testing-library/react@13.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       '@testing-library/dom': 8.20.1
       '@types/react-dom': 18.3.0
       react: 18.3.1
@@ -15583,6 +16146,11 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
 
+  '@types/jest@26.0.20':
+    dependencies:
+      jest-diff: 26.6.2
+      pretty-format: 26.6.2
+
   '@types/jest@29.5.13':
     dependencies:
       expect: 29.7.0
@@ -15613,6 +16181,8 @@ snapshots:
   '@types/node-forge@1.3.11':
     dependencies:
       '@types/node': 20.12.10
+
+  '@types/node@12.20.4': {}
 
   '@types/node@20.12.10':
     dependencies:
@@ -15679,6 +16249,10 @@ snapshots:
       '@types/node': 20.12.10
 
   '@types/yargs-parser@21.0.3': {}
+
+  '@types/yargs@15.0.19':
+    dependencies:
+      '@types/yargs-parser': 21.0.3
 
   '@types/yargs@17.0.33':
     dependencies:
@@ -17463,6 +18037,8 @@ snapshots:
       dequal: 2.0.3
 
   didyoumean@1.2.2: {}
+
+  diff-sequences@26.6.2: {}
 
   diff-sequences@29.6.3: {}
 
@@ -19377,6 +19953,13 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
+  jest-diff@26.6.2:
+    dependencies:
+      chalk: 4.1.2
+      diff-sequences: 26.6.2
+      jest-get-type: 26.3.0
+      pretty-format: 26.6.2
+
   jest-diff@29.7.0:
     dependencies:
       chalk: 4.1.2
@@ -19419,6 +20002,8 @@ snapshots:
       '@types/node': 20.12.10
       jest-mock: 29.7.0
       jest-util: 29.7.0
+
+  jest-get-type@26.3.0: {}
 
   jest-get-type@29.6.3: {}
 
@@ -21274,6 +21859,13 @@ snapshots:
       lodash: 4.17.21
       renderkid: 3.0.0
 
+  pretty-format@26.6.2:
+    dependencies:
+      '@jest/types': 26.6.2
+      ansi-regex: 5.0.1
+      ansi-styles: 4.3.0
+      react-is: 17.0.2
+
   pretty-format@27.5.1:
     dependencies:
       ansi-regex: 5.0.1
@@ -21468,7 +22060,7 @@ snapshots:
 
   react-error-boundary@3.1.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       react: 18.3.1
 
   react-error-overlay@6.0.11: {}
@@ -21507,7 +22099,7 @@ snapshots:
 
   react-syntax-highlighter@13.5.3(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       highlight.js: 10.7.3
       lowlight: 1.20.0
       prismjs: 1.29.0
@@ -21516,7 +22108,7 @@ snapshots:
 
   react-syntax-highlighter@15.4.3(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
       highlight.js: 10.7.3
       lowlight: 1.20.0
       prismjs: 1.29.0
@@ -21605,7 +22197,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.20.0
 
   regex-parser@2.3.0: {}
 
