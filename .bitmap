@@ -58,9 +58,9 @@
         "mainFile": "index.ts",
         "rootDir": "train/train-list",
         "config": {
-            "bitdev.react/react-env@2.1.6": {},
+            "nore-work.train/envs/react-component-env": {},
             "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
+                "env": "nore-work.train/envs/react-component-env"
             }
         }
     },
