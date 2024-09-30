@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { Preview } from '@teambit/preview';
 import { EnvHandler } from '@teambit/envs';
 import { ReactPreview } from '@teambit/preview.react-preview';
+import { tailwindTransformer } from '@learnbit/styling.transformers.tailwind';
 
 const require = createRequire(import.meta.url);
 
@@ -43,7 +44,9 @@ export class ReactComponentEnv extends ReactEnv {
      */
     return ReactPreview.from({
       mounter: require.resolve('./preview/mounter'),
-      // transformers: [webpackTransformer],
+      transformers: [
+        tailwindTransformer({cdn:false}),
+      ],
     });
   }
 }
