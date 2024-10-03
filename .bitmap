@@ -50,6 +50,20 @@
             }
         }
     },
+    "home-aspect": {
+        "name": "home-aspect",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/home-aspect",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.30": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
+    },
     "train-api": {
         "name": "train-api",
         "scope": "",
@@ -89,6 +103,20 @@
             "bitdev.react/react-env@2.1.6": {},
             "teambit.envs/envs": {
                 "env": "bitdev.react/react-env"
+            }
+        }
+    },
+    "train-platform": {
+        "name": "train-platform",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/train-platform",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.30": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
             }
         }
     },

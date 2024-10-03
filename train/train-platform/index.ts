@@ -1,0 +1,1 @@
+export { TrainPlatform } from './train-platform.bit-app.js';

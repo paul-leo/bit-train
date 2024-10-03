@@ -55,7 +55,13 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@bitdev/harmony.harmony-platform": "^2.0.7",
+        "@bitdev/harmony.runtimes.browser-runtime": "^0.0.48",
+        "@bitdev/harmony.runtimes.nodejs-runtime": "^1.0.75",
         "@bitdev/node.node-server": "^1.0.4",
+        "@bitdev/symphony.aspects.header": "^1.0.3",
+        "@bitdev/symphony.examples.people": "^1.0.5",
+        "@bitdev/symphony.symphony-platform": "^1.0.5",
         "@learnbit/styling.config.tailwind": "^0.0.2",
         "@learnbit/styling.transformers.tailwind": "^0.0.6",
         "@teambit/preview.react-preview": "^1.0.60",
