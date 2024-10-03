@@ -50,6 +50,20 @@
             }
         }
     },
+    "home": {
+        "name": "home",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/home",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.30": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
+    },
     "home-aspect": {
         "name": "home-aspect",
         "scope": "",
