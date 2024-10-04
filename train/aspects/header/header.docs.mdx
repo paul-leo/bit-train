@@ -1,0 +1,62 @@
+---
+description: 'A pluggable Header aspect..'
+labels: ['aspect', 'composition', 'extendability']
+---
+
+A plugable Header aspect. Use the header Aspect in your Harmony platform. Plugin to the needed slots or fork.
+
+By default, this header uses the [Sparks Header](/) component. You can override the default header implementing using the `registerHeader` API.
+
+## Get started
+
+Compose it to your Harmony platform:
+
+```ts
+import { SymphonyPlatform } from '@bitdev/symphony.symphony-platform';
+
+/**
+ * compose the header to your platform
+ */    
+export const MyPlatform = SymphonyPlatform.from({
+  name: 'my-platform',
+
+  aspects: [
+    HeaderAspect,
+  ]
+});
+
+export default MyPlatform;
+```
+
+## Use as dependency
+
+Use the header as a dependency from your workspace:
+
+```tsx
+import { HeaderAspect, type HeaderBrowser } from '@bitdev/symphony.aspects.header';
+
+export class MyAspectBrowser {
+  static dependencies = [HeaderAspect]
+
+  static async provider([header]: [HeaderBrowser]) {
+    header.registerAction([
+      {
+        name: 'signup',
+        component: () => {
+          return <Button href="signup">Sign up</Button>
+        }
+      }
+    ]);
+
+    return new MyAspectBrowser();
+  }
+}
+```
+
+## Fork the header
+
+If you need to want to build your own header, you can use this one as a base:
+
+```
+bit fork bitdev.symphony/aspect/header aspects/my-header
+```

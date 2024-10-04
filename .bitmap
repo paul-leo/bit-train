@@ -9,6 +9,34 @@
  */
 
 {
+    "aspects/header": {
+        "name": "aspects/header",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/aspects/header",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.27": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            },
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.component/dev-files": {},
+            "teambit.preview/preview": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.pipelines/builder": {},
+            "teambit.semantics/schema": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "bitdev.symphony",
+                    "name": "aspects/header",
+                    "version": "1.0.3"
+                }
+            }
+        }
+    },
     "config/tailwind": {
         "name": "config/tailwind",
         "scope": "",

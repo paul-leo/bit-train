@@ -18,7 +18,7 @@ export function HomeAspectApp({ routes }: HomeAspectAppProps) {
           const RouteComponent = route.component;
           return <Route key={route.path} path={route.path} element={<RouteComponent />} />;
         })}
-        <Route path='*' element={<>Page not found!</>} />
+        <Route path='*' element={<>Page not found! 11</>} />
       </Routes>
       <div>Footer</div>
     </div>

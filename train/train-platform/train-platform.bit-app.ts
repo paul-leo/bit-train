@@ -2,9 +2,9 @@ import { HarmonyPlatform } from '@bitdev/harmony.harmony-platform';
 import { NodeJSRuntime } from '@bitdev/harmony.runtimes.nodejs-runtime';
 import { BrowserRuntime } from '@bitdev/harmony.runtimes.browser-runtime';
 import { SymphonyPlatformAspect } from '@bitdev/symphony.symphony-platform';
-import { PeopleAspect } from '@bitdev/symphony.examples.people';
+// import { PeopleAspect } from '@bitdev/symphony.examples.people';
 import { HeaderAspect } from '@bitdev/symphony.aspects.header';
-import { HomeAspectAspect } from '@nore-work/train.home-aspect';
+import { HomeAspect } from '@nore-work/train.home';
 
 /**
   * compose the train-platform platform.
@@ -25,9 +25,9 @@ export const TrainPlatform = HarmonyPlatform.from({
   aspects: [
     // you can use the symphony header aspect or fork to build your own.
     HeaderAspect,
-    // example feature, replace with your own.
-    PeopleAspect,
-    HomeAspectAspect,
+    // // example feature, replace with your own.
+    // PeopleAspect,
+    HomeAspect,
   ],
 });
 
