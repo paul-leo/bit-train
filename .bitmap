@@ -23,6 +23,20 @@
             }
         }
     },
+    "public": {
+        "name": "public",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.train",
+        "mainFile": "index.ts",
+        "rootDir": "train/public",
+        "config": {
+            "bitdev.node/node-env@2.0.31": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.node/node-env"
+            }
+        }
+    },
     "train-api": {
         "name": "train-api",
         "scope": "",
@@ -73,9 +87,9 @@
         "mainFile": "index.ts",
         "rootDir": "train/train-search",
         "config": {
-            "bitdev.react/react-env@2.1.6": {},
+            "nore-work.train/envs/react-component-env": {},
             "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
+                "env": "nore-work.train/envs/react-component-env"
             }
         }
     },
