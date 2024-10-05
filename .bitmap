@@ -65,20 +65,6 @@
             }
         }
     },
-    "train-platform": {
-        "name": "train-platform",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
-        "mainFile": "index.ts",
-        "rootDir": "train/train-platform",
-        "config": {
-            "bitdev.symphony/envs/symphony-env@1.0.30": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.symphony/envs/symphony-env"
-            }
-        }
-    },
     "train-search": {
         "name": "train-search",
         "scope": "",
