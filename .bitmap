@@ -11,87 +11,45 @@
 {
     "envs/react-component-env": {
         "name": "envs/react-component-env",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/envs/react-component-env",
-        "config": {
-            "bitdev.general/envs/bit-env@1.0.15": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.general/envs/bit-env"
-            }
-        }
+        "rootDir": "train/envs/react-component-env"
     },
     "public": {
         "name": "public",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/public",
-        "config": {
-            "bitdev.node/node-env@2.0.31": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.node/node-env"
-            }
-        }
+        "rootDir": "train/public"
     },
     "train-api": {
         "name": "train-api",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/train-api",
-        "config": {
-            "bitdev.node/node-env@2.0.31": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.node/node-env"
-            }
-        }
+        "rootDir": "train/train-api"
     },
     "train-list": {
         "name": "train-list",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/train-list",
-        "config": {
-            "nore-work.train/envs/react-component-env": {},
-            "teambit.envs/envs": {
-                "env": "nore-work.train/envs/react-component-env"
-            }
-        }
+        "rootDir": "train/train-list"
     },
     "train-order": {
         "name": "train-order",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/train-order",
-        "config": {
-            "bitdev.react/react-env@2.1.6": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "train/train-order"
     },
     "train-search": {
         "name": "train-search",
-        "scope": "",
-        "version": "",
-        "defaultScope": "nore-work.train",
+        "scope": "nore-work.train",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "train/train-search",
-        "config": {
-            "nore-work.train/envs/react-component-env": {},
-            "teambit.envs/envs": {
-                "env": "nore-work.train/envs/react-component-env"
-            }
-        }
+        "rootDir": "train/train-search"
     },
     "$schema-version": "17.0.0"
 }

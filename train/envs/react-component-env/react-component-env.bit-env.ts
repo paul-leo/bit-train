@@ -49,6 +49,7 @@ export class ReactComponentEnv extends ReactEnv {
       ],
     });
   }
+  
 }
 
 export default new ReactComponentEnv();
