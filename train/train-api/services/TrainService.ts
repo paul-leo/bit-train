@@ -12,13 +12,9 @@ class TrainService {
 
   async searchTickets(params: { date: string; departure: string; arrival: string }): Promise<TrainTicket[]> {
     const { date, departure, arrival } = params;
-
+    console.log(`Searching tickets for ${date} from ${departure} to ${arrival}`);
     // 在实际应用中，这里应该是查询数据库或调用外部 API
-    return this.tickets.filter(ticket => 
-      ticket.departureTime.startsWith(date) &&
-      ticket.departure === departure &&
-      ticket.arrival === arrival
-    );
+    return this.tickets;
   }
 }
 
