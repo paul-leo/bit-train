@@ -61,7 +61,7 @@ const DatePicker = ({ value, onChange, placeholder }) => {
   );
 };
 
-export const TrainSearch = () => {
+export const TrainSearch = ({onSearch}) => {
   const [activeTab, setActiveTab] = useState('单程');
   const [departureCity, setDepartureCity] = useState('上海');
   const [arrivalCity, setArrivalCity] = useState('北京');
@@ -135,9 +135,7 @@ export const TrainSearch = () => {
                           name="reservation" 
                           checked={reservationType === '本人'}
                           onChange={(e) => {
-                            debugger;
                             if(e.target.checked) {
-                              debugger;
                               setReservationType('本人');
                             }
                           }}
@@ -152,9 +150,7 @@ export const TrainSearch = () => {
                           checked={reservationType === '多人'}
                           onChange={(e) => {
                             console.log('e.target.checked', e.target.checked);
-                            debugger;
                             if(e.target.checked) {
-                              debugger;
                               setReservationType('多人');
                             }
                           }}
@@ -162,7 +158,7 @@ export const TrainSearch = () => {
                       <span className="ml-2">为多人预订</span>
                   </label>
               </div>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-medium">
+              <button onClick={onSearch?.()} className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-medium">
                   查询
               </button>
           </div>
