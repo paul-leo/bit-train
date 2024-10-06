@@ -27,7 +27,7 @@ const DateSelector = ({ selectedDate, onDateChange }) => (
           {['09-27', '09-28', '09-29'].map((date, index) => (
               <button 
                   key={date} 
-                  className={`px-3 py-1 rounded-full ${selectedDate === date ? 'bg-blue-600 text-white' : 'border border-gray-300'}`}
+                  className={`px-3 py-1 ${selectedDate === date ? 'bg-blue-600 text-white' : 'border border-gray-300'}`}
                   onClick={() => onDateChange(date)}
               >
                   {date}<br/>{['周五', '周六', '周日'][index]}
