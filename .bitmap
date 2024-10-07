@@ -12,14 +12,14 @@
     "envs/react-component-env": {
         "name": "envs/react-component-env",
         "scope": "nore-work.train",
-        "version": "0.0.1",
+        "version": "d5fc14733a304d1f013af3e1bc959269e834ac12",
         "mainFile": "index.ts",
         "rootDir": "train/envs/react-component-env"
     },
     "public": {
         "name": "public",
         "scope": "nore-work.train",
-        "version": "0.0.1",
+        "version": "893bc6f0dd5d534333234ff826db98625879a80d",
         "mainFile": "index.ts",
         "rootDir": "train/public"
     },
@@ -33,7 +33,7 @@
     "train-list": {
         "name": "train-list",
         "scope": "nore-work.train",
-        "version": "0.0.1",
+        "version": "e20772c3008aec5b53109160421673b837cedbcb",
         "mainFile": "index.ts",
         "rootDir": "train/train-list"
     },
@@ -47,7 +47,7 @@
     "train-search": {
         "name": "train-search",
         "scope": "nore-work.train",
-        "version": "0.0.1",
+        "version": "a608d5e922881e785bd2bc379c4a59ef66b53c94",
         "mainFile": "index.ts",
         "rootDir": "train/train-search"
     },
