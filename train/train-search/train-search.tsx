@@ -84,7 +84,7 @@ export const TrainSearch = ({onSearch}) => {
   };
 
   return (
-      <div className="max-w-md mx-auto mt-10 bg-white rounded-lg overflow-hidden shadow-lg">
+      <div test-id="train-search" className="max-w-md mx-auto mt-10 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white flex">
               <button 
                   className={`flex-1 text-lg font-medium py-3 transition-colors ${activeTab === '单程' ? 'bg-white text-blue-900' : ''}`}

@@ -33,7 +33,7 @@
     "train-list": {
         "name": "train-list",
         "scope": "nore-work.train",
-        "version": "e20772c3008aec5b53109160421673b837cedbcb",
+        "version": "bd63165b9acac72740fd907aad24a5641f6e1f8d",
         "mainFile": "index.ts",
         "rootDir": "train/train-list"
     },
@@ -47,7 +47,7 @@
     "train-search": {
         "name": "train-search",
         "scope": "nore-work.train",
-        "version": "a608d5e922881e785bd2bc379c4a59ef66b53c94",
+        "version": "9ee5bc8924cde32128d5ea1d415159f579c9c22f",
         "mainFile": "index.ts",
         "rootDir": "train/train-search"
     },

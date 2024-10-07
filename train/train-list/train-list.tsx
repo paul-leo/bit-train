@@ -77,7 +77,7 @@ export const TrainList = () => {
   ];
 
   return (
-      <div className="max-w-md mx-auto bg-gray-100 min-h-screen">
+      <div test-id="train-list" className="max-w-md mx-auto bg-gray-100 min-h-screen">
           <Header />
           <div className="p-4">
               <DateSelector selectedDate={selectedDate} onDateChange={setSelectedDate} />
