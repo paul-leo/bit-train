@@ -4,13 +4,13 @@ export type TrainAppProps = {
   /**
    * sets the component children.
    */
-  children?: ReactNode;
+  baseUrl?: string;
 };
 
-export function TrainApp({ children }: TrainAppProps) {
+export function TrainApp({ baseUrl='/train' }: TrainAppProps) {
   return (
     <div>
-      {children}
+      
     </div>
   );
 }
